@@ -1,0 +1,48 @@
+{
+  "name": "to-ico-cli",
+  "version": "0.0.0",
+  "description": "Convert PNG to ICO",
+  "license": "MIT",
+  "repository": "kevva/to-ico-cli",
+  "author": {
+    "name": "Kevin Martensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva"
+  },
+  "bin": {
+    "to-ico": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "buffer",
+    "cli-app",
+    "cli",
+    "convert",
+    "fast",
+    "ico",
+    "png"
+  ],
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "meow": "^3.7.0",
+    "pify": "^2.3.0",
+    "to-ico": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.4.0",
+    "file-type": "^3.8.0",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
