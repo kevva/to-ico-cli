@@ -1,6 +1,8 @@
+import fs from 'fs';
 import test from 'ava';
 import execa from 'execa';
 import fileType from 'file-type';
+import pify from 'pify';
 
 process.chdir(__dirname);
 
@@ -17,6 +19,18 @@ test('convert images to ico', async t => {
 		'fixtures/16.png',
 		'fixtures/32.png'
 	], {encoding: 'buffer'})), {
+		ext: 'ico',
+		mime: 'image/x-icon'
+	});
+});
+
+test('convert image to ico using stdin', async t => {
+	const input = await pify(fs.readFile)('fixtures/16.png');
+
+	t.deepEqual(fileType(await execa.stdout('./cli.js', {
+		input,
+		encoding: 'buffer'
+	})), {
 		ext: 'ico',
 		mime: 'image/x-icon'
 	});
