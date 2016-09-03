@@ -13,7 +13,7 @@ $ npm install --global to-ico-cli
 ## Usage
 
 ```
-$ to-ico-cli --help
+$ to-ico --help
 
   Usage
     $ to-ico <input> ... > favicon.ico
