@@ -24,6 +24,10 @@ $ to-ico --help
     $ cat unicorn-32x32.png | to-ico > favicon.ico
 ```
 
+## Related
+
+* [to-ico](https://github.com/kevva/to-ico) - API for this module
+
 
 ## License
 
