@@ -25,6 +25,11 @@ $ to-ico --help
 ```
 
 
+## Related
+
+* [to-ico](https://github.com/kevva/to-ico) - API for this module
+
+
 ## License
 
 MIT © [Kevin Martensson](https://github.com/kevva)
